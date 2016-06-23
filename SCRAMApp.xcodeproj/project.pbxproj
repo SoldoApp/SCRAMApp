@@ -1,0 +1,519 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0F68B4941BAADCA10050666A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F68B4931BAADCA10050666A /* AppDelegate.swift */; };
+		0F68B4961BAADCA10050666A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F68B4951BAADCA10050666A /* ViewController.swift */; };
+		0F68B4991BAADCA10050666A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0F68B4971BAADCA10050666A /* Main.storyboard */; };
+		0F68B49B1BAADCA10050666A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0F68B49A1BAADCA10050666A /* Assets.xcassets */; };
+		0F68B49E1BAADCA10050666A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0F68B49C1BAADCA10050666A /* LaunchScreen.storyboard */; };
+		0FF92ACB1CC67C3400DFF97B /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FF92ACA1CC67C3400DFF97B /* Common.swift */; };
+		0FF92ACD1CC67C6C00DFF97B /* SCRAMMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FF92ACC1CC67C6C00DFF97B /* SCRAMMessage.swift */; };
+		0FF92AD21CC688DF00DFF97B /* CryptographicKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FF92AD11CC688DF00DFF97B /* CryptographicKey.swift */; };
+		0FF92AD41CC688F500DFF97B /* CryptographicHashFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FF92AD31CC688F500DFF97B /* CryptographicHashFunctions.swift */; };
+		0FF92AD81CC68A3300DFF97B /* CryptographicKeyTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FF92AD71CC68A3300DFF97B /* CryptographicKeyTest.swift */; };
+		0FF92ADA1CC68E4E00DFF97B /* SCRAMMessageTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FF92AD91CC68E4E00DFF97B /* SCRAMMessageTest.swift */; };
+		0FF92ADE1CC6923200DFF97B /* AsciiPrintableCharacterSetTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FF92ADD1CC6923200DFF97B /* AsciiPrintableCharacterSetTest.swift */; };
+		8F23FE161BBA9E8C0098039F /* Server.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F23FE151BBA9E8C0098039F /* Server.swift */; };
+		8F23FE181BBA9ECA0098039F /* Client.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F23FE171BBA9ECA0098039F /* Client.swift */; };
+		8F23FE1A1BBAA4890098039F /* AsciiPrintableCharacterSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F23FE191BBAA4890098039F /* AsciiPrintableCharacterSet.swift */; };
+		8F5B94381BC57C4F00F0B60C /* CryptographicHashFunctionsTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F5B94371BC57C4F00F0B60C /* CryptographicHashFunctionsTest.swift */; };
+		8F8D7B4E1BBD34B600E00059 /* SCRAM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F8D7B4D1BBD34B600E00059 /* SCRAM.swift */; };
+		8F8D7B501BBD34D800E00059 /* SCRAMTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F8D7B4F1BBD34D800E00059 /* SCRAMTest.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0F68B4A51BAADCA10050666A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0F68B4881BAADCA10050666A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0F68B48F1BAADCA10050666A;
+			remoteInfo = authentication;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0F68B4901BAADCA10050666A /* SCRAMApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SCRAMApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0F68B4931BAADCA10050666A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		0F68B4951BAADCA10050666A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		0F68B4981BAADCA10050666A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		0F68B49A1BAADCA10050666A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0F68B49D1BAADCA10050666A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		0F68B49F1BAADCA10050666A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0F68B4A41BAADCA10050666A /* SCRAMAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SCRAMAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0F68B4AA1BAADCA10050666A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0FF92ACA1CC67C3400DFF97B /* Common.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Common.swift; sourceTree = "<group>"; };
+		0FF92ACC1CC67C6C00DFF97B /* SCRAMMessage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SCRAMMessage.swift; sourceTree = "<group>"; };
+		0FF92AD11CC688DF00DFF97B /* CryptographicKey.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CryptographicKey.swift; sourceTree = "<group>"; };
+		0FF92AD31CC688F500DFF97B /* CryptographicHashFunctions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CryptographicHashFunctions.swift; sourceTree = "<group>"; };
+		0FF92AD71CC68A3300DFF97B /* CryptographicKeyTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CryptographicKeyTest.swift; sourceTree = "<group>"; };
+		0FF92AD91CC68E4E00DFF97B /* SCRAMMessageTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SCRAMMessageTest.swift; sourceTree = "<group>"; };
+		0FF92ADD1CC6923200DFF97B /* AsciiPrintableCharacterSetTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AsciiPrintableCharacterSetTest.swift; sourceTree = "<group>"; };
+		8F12B5CE1BBC02BC0029D7E5 /* scram-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "scram-Bridging-Header.h"; sourceTree = "<group>"; };
+		8F23FE151BBA9E8C0098039F /* Server.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Server.swift; sourceTree = "<group>"; };
+		8F23FE171BBA9ECA0098039F /* Client.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Client.swift; sourceTree = "<group>"; };
+		8F23FE191BBAA4890098039F /* AsciiPrintableCharacterSet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AsciiPrintableCharacterSet.swift; sourceTree = "<group>"; };
+		8F5B94371BC57C4F00F0B60C /* CryptographicHashFunctionsTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CryptographicHashFunctionsTest.swift; sourceTree = "<group>"; };
+		8F8D7B4D1BBD34B600E00059 /* SCRAM.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SCRAM.swift; sourceTree = "<group>"; };
+		8F8D7B4F1BBD34D800E00059 /* SCRAMTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SCRAMTest.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0F68B48D1BAADCA10050666A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0F68B4A11BAADCA10050666A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0F68B4871BAADCA10050666A = {
+			isa = PBXGroup;
+			children = (
+				0F68B4921BAADCA10050666A /* Source */,
+				0F68B4A71BAADCA10050666A /* Tests */,
+				0F68B4911BAADCA10050666A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		0F68B4911BAADCA10050666A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0F68B4901BAADCA10050666A /* SCRAMApp.app */,
+				0F68B4A41BAADCA10050666A /* SCRAMAppTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0F68B4921BAADCA10050666A /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				0FF92AD51CC689CE00DFF97B /* SCRAM */,
+				0FF92AD01CC688DB00DFF97B /* Crypto */,
+				0FF92AC91CC67C0E00DFF97B /* Common */,
+				0FFD8E381D1C4A50005C8425 /* Supporting Files */,
+				0F68B4931BAADCA10050666A /* AppDelegate.swift */,
+				0F68B4951BAADCA10050666A /* ViewController.swift */,
+				0F68B4971BAADCA10050666A /* Main.storyboard */,
+				0F68B49C1BAADCA10050666A /* LaunchScreen.storyboard */,
+				8F23FE171BBA9ECA0098039F /* Client.swift */,
+				8F23FE151BBA9E8C0098039F /* Server.swift */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		0F68B4A71BAADCA10050666A /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				0F68B4AA1BAADCA10050666A /* Info.plist */,
+				0FFD8E391D1C4A7C005C8425 /* SCRAM */,
+				0FFD8E3A1D1C4A81005C8425 /* Crypto */,
+				0FFD8E3B1D1C4A87005C8425 /* Common */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
+		0FF92AC91CC67C0E00DFF97B /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				8F23FE191BBAA4890098039F /* AsciiPrintableCharacterSet.swift */,
+				0FF92ACA1CC67C3400DFF97B /* Common.swift */,
+			);
+			name = Common;
+			sourceTree = "<group>";
+		};
+		0FF92AD01CC688DB00DFF97B /* Crypto */ = {
+			isa = PBXGroup;
+			children = (
+				0FF92AD11CC688DF00DFF97B /* CryptographicKey.swift */,
+				0FF92AD31CC688F500DFF97B /* CryptographicHashFunctions.swift */,
+			);
+			name = Crypto;
+			sourceTree = "<group>";
+		};
+		0FF92AD51CC689CE00DFF97B /* SCRAM */ = {
+			isa = PBXGroup;
+			children = (
+				8F8D7B4D1BBD34B600E00059 /* SCRAM.swift */,
+				0FF92ACC1CC67C6C00DFF97B /* SCRAMMessage.swift */,
+			);
+			name = SCRAM;
+			sourceTree = "<group>";
+		};
+		0FFD8E381D1C4A50005C8425 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				8F12B5CE1BBC02BC0029D7E5 /* scram-Bridging-Header.h */,
+				0F68B49A1BAADCA10050666A /* Assets.xcassets */,
+				0F68B49F1BAADCA10050666A /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		0FFD8E391D1C4A7C005C8425 /* SCRAM */ = {
+			isa = PBXGroup;
+			children = (
+				8F8D7B4F1BBD34D800E00059 /* SCRAMTest.swift */,
+				0FF92AD91CC68E4E00DFF97B /* SCRAMMessageTest.swift */,
+			);
+			name = SCRAM;
+			sourceTree = "<group>";
+		};
+		0FFD8E3A1D1C4A81005C8425 /* Crypto */ = {
+			isa = PBXGroup;
+			children = (
+				0FF92AD71CC68A3300DFF97B /* CryptographicKeyTest.swift */,
+				8F5B94371BC57C4F00F0B60C /* CryptographicHashFunctionsTest.swift */,
+			);
+			name = Crypto;
+			sourceTree = "<group>";
+		};
+		0FFD8E3B1D1C4A87005C8425 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				0FF92ADD1CC6923200DFF97B /* AsciiPrintableCharacterSetTest.swift */,
+			);
+			name = Common;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0F68B48F1BAADCA10050666A /* SCRAMApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0F68B4AD1BAADCA10050666A /* Build configuration list for PBXNativeTarget "SCRAMApp" */;
+			buildPhases = (
+				0F68B48C1BAADCA10050666A /* Sources */,
+				0F68B48D1BAADCA10050666A /* Frameworks */,
+				0F68B48E1BAADCA10050666A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SCRAMApp;
+			productName = authentication;
+			productReference = 0F68B4901BAADCA10050666A /* SCRAMApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		0F68B4A31BAADCA10050666A /* SCRAMAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0F68B4B01BAADCA10050666A /* Build configuration list for PBXNativeTarget "SCRAMAppTests" */;
+			buildPhases = (
+				0F68B4A01BAADCA10050666A /* Sources */,
+				0F68B4A11BAADCA10050666A /* Frameworks */,
+				0F68B4A21BAADCA10050666A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0F68B4A61BAADCA10050666A /* PBXTargetDependency */,
+			);
+			name = SCRAMAppTests;
+			productName = authenticationTests;
+			productReference = 0F68B4A41BAADCA10050666A /* SCRAMAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0F68B4881BAADCA10050666A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0700;
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = "Soldo LTD";
+				TargetAttributes = {
+					0F68B48F1BAADCA10050666A = {
+						CreatedOnToolsVersion = 7.0;
+						DevelopmentTeam = PF63EMW3V8;
+					};
+					0F68B4A31BAADCA10050666A = {
+						CreatedOnToolsVersion = 7.0;
+						TestTargetID = 0F68B48F1BAADCA10050666A;
+					};
+				};
+			};
+			buildConfigurationList = 0F68B48B1BAADCA10050666A /* Build configuration list for PBXProject "SCRAMApp" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 0F68B4871BAADCA10050666A;
+			productRefGroup = 0F68B4911BAADCA10050666A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0F68B48F1BAADCA10050666A /* SCRAMApp */,
+				0F68B4A31BAADCA10050666A /* SCRAMAppTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0F68B48E1BAADCA10050666A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0F68B49E1BAADCA10050666A /* LaunchScreen.storyboard in Resources */,
+				0F68B49B1BAADCA10050666A /* Assets.xcassets in Resources */,
+				0F68B4991BAADCA10050666A /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0F68B4A21BAADCA10050666A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0F68B48C1BAADCA10050666A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0FF92ACD1CC67C6C00DFF97B /* SCRAMMessage.swift in Sources */,
+				0FF92ACB1CC67C3400DFF97B /* Common.swift in Sources */,
+				0FF92AD41CC688F500DFF97B /* CryptographicHashFunctions.swift in Sources */,
+				8F23FE1A1BBAA4890098039F /* AsciiPrintableCharacterSet.swift in Sources */,
+				0FF92AD21CC688DF00DFF97B /* CryptographicKey.swift in Sources */,
+				0F68B4961BAADCA10050666A /* ViewController.swift in Sources */,
+				8F23FE161BBA9E8C0098039F /* Server.swift in Sources */,
+				8F23FE181BBA9ECA0098039F /* Client.swift in Sources */,
+				0F68B4941BAADCA10050666A /* AppDelegate.swift in Sources */,
+				8F8D7B4E1BBD34B600E00059 /* SCRAM.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0F68B4A01BAADCA10050666A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0FF92ADA1CC68E4E00DFF97B /* SCRAMMessageTest.swift in Sources */,
+				8F8D7B501BBD34D800E00059 /* SCRAMTest.swift in Sources */,
+				0FF92ADE1CC6923200DFF97B /* AsciiPrintableCharacterSetTest.swift in Sources */,
+				8F5B94381BC57C4F00F0B60C /* CryptographicHashFunctionsTest.swift in Sources */,
+				0FF92AD81CC68A3300DFF97B /* CryptographicKeyTest.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0F68B4A61BAADCA10050666A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0F68B48F1BAADCA10050666A /* SCRAMApp */;
+			targetProxy = 0F68B4A51BAADCA10050666A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		0F68B4971BAADCA10050666A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0F68B4981BAADCA10050666A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		0F68B49C1BAADCA10050666A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0F68B49D1BAADCA10050666A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		0F68B4AB1BAADCA10050666A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		0F68B4AC1BAADCA10050666A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		0F68B4AE1BAADCA10050666A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = Source/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.soldo.scram;
+				PRODUCT_NAME = SCRAMApp;
+				SWIFT_OBJC_BRIDGING_HEADER = "Source/scram-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		0F68B4AF1BAADCA10050666A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = Source/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.soldo.scram;
+				PRODUCT_NAME = SCRAMApp;
+				SWIFT_OBJC_BRIDGING_HEADER = "Source/scram-Bridging-Header.h";
+			};
+			name = Release;
+		};
+		0F68B4B11BAADCA10050666A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = Tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.soldo.scram.tests;
+				PRODUCT_NAME = SCRAMAppTests;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SCRAMApp.app/SCRAMApp";
+			};
+			name = Debug;
+		};
+		0F68B4B21BAADCA10050666A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = Tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.soldo.scram.tests;
+				PRODUCT_NAME = SCRAMAppTests;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SCRAMApp.app/SCRAMApp";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0F68B48B1BAADCA10050666A /* Build configuration list for PBXProject "SCRAMApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0F68B4AB1BAADCA10050666A /* Debug */,
+				0F68B4AC1BAADCA10050666A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0F68B4AD1BAADCA10050666A /* Build configuration list for PBXNativeTarget "SCRAMApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0F68B4AE1BAADCA10050666A /* Debug */,
+				0F68B4AF1BAADCA10050666A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0F68B4B01BAADCA10050666A /* Build configuration list for PBXNativeTarget "SCRAMAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0F68B4B11BAADCA10050666A /* Debug */,
+				0F68B4B21BAADCA10050666A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0F68B4881BAADCA10050666A /* Project object */;
+}

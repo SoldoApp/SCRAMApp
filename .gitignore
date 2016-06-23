@@ -1,0 +1,7 @@
+.DS_Store
+xcuserdata/
+snapshots
+Carthage/*
+!Carthage/Build/iOS/
+screenshots
+*.xcscmblueprint
